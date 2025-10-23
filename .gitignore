@@ -1,0 +1,15 @@
+# SQLite Veritabanı Dosyası (ÇOK ÖNEMLİ)
+database/otobus.sqlite
+
+# Üçüncü parti kütüphaneler (Gerek yok)
+tcpdf/
+
+# Ses ve Görüntü Dosyaları (Opsiyonel, ama önerilir)
+sounds/
+images/
+
+# Eğer /otobus_projesi/images/ gibi bir klasörünüz varsa onu da ekleyin
+otobus_projesi/images/
+
+# Linux/macOS sistem dosyaları
+.DS_Store

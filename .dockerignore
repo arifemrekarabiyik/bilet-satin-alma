@@ -1,0 +1,16 @@
+# Git sürüm kontrol dosyaları (imajda olmamalı)
+.git
+.gitignore
+
+# Kod editörü ayar dosyaları (VS Code, PhpStorm vb.)
+.vscode/
+.idea/
+
+# Çalışma zamanı verisi - Geliştirme ortamındaki veritabanını imaja kopyalama!
+# Container çalıştığında veritabanı sıfırdan ve temiz bir şekilde oluşmalı.
+database/otobus.sqlite
+database/*.sqlite-journal
+
+# Docker'ın kendi yapılandırma dosyaları (imajın içinde olmalarına gerek yok)
+Dockerfile
+docker-compose.yml

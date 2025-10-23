@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  web:
+    # Yukarıdaki Dockerfile talimatlarını kullanarak imajı oluştur
+    build: .
+    # Bilgisayarınızın 8080 portunu, container'ın web sunucusu (80) portuna bağla
+    # Böylece siteye http://localhost:8080 adresinden erişeceğiz
+    ports:
+      - "8080:80"
+    # Kod dosyalarınızı bilgisayarınızdan container'a "canlı" olarak bağla
+    # Kodunuzda yaptığınız bir değişiklik, anında çalışan sitede de görünür
+    volumes:
+      - .:/var/www/html

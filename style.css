@@ -1,0 +1,223 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: #343a40;
+    margin: 0;
+    
+    background-image: url('images/recep.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+
+}
+
+.auth-page-body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+
+.container {
+    max-width: 800px;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.85); 
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    width: 100%; 
+    margin: 20px auto;
+}
+
+
+h1, h2, h3 {
+    color: #d28604;
+    border-bottom: 2px solid #e9ecef;
+    padding-bottom: 10px;
+    margin-top: 0;
+}
+
+
+.navbar { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; padding-bottom: 10px; border-bottom: 1px solid #dee2e6; }
+.navbar-left { display: flex; align-items: center; gap: 25px; }
+.navbar-right { display: flex; align-items: center; gap: 15px; }
+.navbar-left h1 { margin: 0; padding: 0; border: none; font-size: 24px; }
+.navbar a { text-decoration: none; color: #ff9d00; font-weight: 500; padding: 8px 12px; border-radius: 5px; transition: background-color 0.2s; }
+.navbar a:hover { background-color: #e9ecef; }
+
+
+.form-group { margin-bottom: 1.2rem; }
+.form-group label { display: block; font-weight: 500; margin-bottom: 8px; }
+.form-group input, .form-group select { width: 100%; padding: 12px; border: 1px solid #ced4da; border-radius: 5px; box-sizing: border-box; transition: border-color 0.2s, box-shadow 0.2s; }
+.form-group input:focus, .form-group select:focus {
+    outline: none;
+    border-color: #FF8C00; 
+    box-shadow: 0 0 0 3px rgba(255, 140, 0, 0.25); 
+}
+
+
+.btn {
+    display: inline-block;
+    background-color: #FF8C00; 
+    color: #ffffff;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600; 
+    text-decoration: none;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); 
+    transition: all 0.2s ease-in-out; 
+}
+.btn:hover {
+    background-color: #e07b00; 
+    transform: translateY(-2px); 
+    
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+
+table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+th, td { padding: 15px; text-align: left; border-bottom: 1px solid #dee2e6; }
+thead th { background-color: #e9ecef; font-weight: 600; color: #495057; }
+tbody tr:hover { background-color: #f1f3f5; }
+
+
+.alert { padding: 15px; margin-bottom: 20px; border: 1px solid transparent; border-radius: 5px; }
+.alert-success { color: #155724; background-color: #d4edda; border-color: #c3e6cb; }
+.alert-danger { color: #721c24; background-color: #f8d7da; border-color: #f5c6cb; }
+
+.bus-layout { display: grid; grid-template-columns: repeat(5, 50px);  gap: 10px 15px; justify-content: center; background-color: #f1f3f5; padding: 20px; border-radius: 5px; border: 2px solid #dee2e6; }
+.seat-container { position: relative; }
+.seat-container input[type="radio"]:checked + .seat {
+    background-color: #FF8C00; 
+    color: white;
+    border-color: #e07b00; 
+}
+.seat { width: 50px; height: 50px; display: flex; justify-content: center; align-items: center; border-radius: 5px; font-weight: bold; color: #495057; cursor: pointer; border: 1px solid #adb5bd; }
+.available { background-color: #ffffff; }
+.available:hover { background-color: #d4edda; }
+.occupied { background-color: #ced4da; color: #6c757d; cursor: not-allowed; border-color: #adb5bd; }
+.aisle { grid-column: 3; } 
+.seat-container input[type="radio"]:checked + .seat { background-color: #007bff; color: white; border-color: #0056b3; }
+.brand-title {
+    font-family: 'Poppins', sans-serif; 
+    font-size: 4rem; 
+    font-weight: 700; 
+    text-align: center; 
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    color: #343a40; 
+    border-bottom: 2px solid #e9ecef;
+}
+
+
+.brand-title .orange-text {
+    color: #FF8C00; 
+}
+
+
+.btn-auth {
+    background-color: #343a40; 
+    color: #ffffff !important; 
+    padding: 8px 16px; 
+    font-weight: 500;
+    text-transform: uppercase; 
+    font-size: 14px; 
+    box-shadow: none;
+    border: 1px solid #343a40;
+}
+
+.btn-auth:hover {
+    background-color: #000000;
+    color: #ffffff !important;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    border-color: #000000;
+}
+
+
+.sefer-list {
+    display: grid; 
+    gap: 20px; 
+    margin-top: 30px;
+}
+
+.sefer-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    padding: 25px;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    border: 1px solid #e9ecef;
+}
+
+.sefer-card:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.12);
+}
+
+.sefer-details {
+    flex-grow: 1; 
+    margin-right: 20px;
+}
+
+.sefer-details h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.6rem; 
+    color: #343a40;
+    border: none; 
+    padding: 0;
+}
+
+.sefer-details .firma-adi {
+    font-size: 0.9rem;
+    color: #6c757d;
+    margin-bottom: 15px;
+    display: block; 
+}
+
+.sefer-details .zaman {
+    font-weight: 500;
+    font-size: 1.1rem;
+    color: #495057;
+}
+
+.sefer-action {
+    text-align: right;
+}
+
+.sefer-action .fiyat {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #FF8C00; 
+    display: block; 
+    margin-bottom: 10px;
+}
+
+
+@media (max-width: 768px) {
+    .sefer-card {
+        flex-direction: column; 
+        align-items: flex-start; 
+        text-align: left;
+    }
+    .sefer-action {
+        text-align: left;
+        margin-top: 20px;
+        width: 100%; 
+    }
+    .sefer-action .btn {
+        width: 100%;
+    }
+    .sefer-action .fiyat {
+        margin-bottom: 15px;
+    }
+}
