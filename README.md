@@ -6,23 +6,21 @@ Kurulum (Docker ile - Tavsiye Edilen)
 Bu projeyi çalıştırmanın en kolay yolu Docker kullanmaktır. Bilgisayarınızda Docker ve Docker Compose kurulu olmalıdır.
 
     Projeyi klonlayın:
-    Bash
+    git clone https://github.com/arifemrekarabiyik/bilet-satin-alma.git
+    cd bilet-satin-alma
 
-git clone https://github.com/arifemrekarabiyik/bilet-satin-alma.git
-cd bilet-satin-alma
+
 
 Docker konteynerlerini başlatın:
-Bash
 
-docker compose up --build -d
+    docker compose up --build -d
 
-(-d bayrağı, terminalinizi meşgul etmeden arka planda çalıştırır.)
 
 Veritabanını Kurun (En Önemli Adım): Konteyner ilk başladığında veritabanı boştur. Veritabanını, tabloları ve test kullanıcılarını oluşturmak için tarayıcınızdan aşağıdaki adrese gidin:
 
-http://localhost/setup.php
+    http://localhost/setup.php
 
-(Not: Eğer docker-compose.yml dosyanızda portu değiştirdiyseniz, 8080 gibi, http://localhost:8080/setup.php adresini kullanın.)
+(Not: Eğer docker-compose.yml dosyanızda portu değiştirdiyseniz, 1234 gibi, http://localhost:1234/setup.php adresini kullanın.)
 
 Ekranda "Kurulum başarıyla tamamlandı!" mesajını gördüğünüzde GÜVENLİK İÇİN setup.php dosyasını silin. (Dosyayı yerel klasörünüzden silmeniz yeterlidir).
 
