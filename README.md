@@ -56,3 +56,5 @@ Veritabanı oluşturulduğunda aşağıdaki test kullanıcıları otomatik olara
 * **Rol:** Yolcu (Bilet alır, bakiye yükler)
     * **Kullanıcı Adı:** `arif`
     * **Şifre:** `arif`
+
+* **Rol:** Ziyaretçi (seferleri görüntüleyebilir bilet almak istediğinde lütfen giriş yapınız uyarısı ile karşılaşır)
