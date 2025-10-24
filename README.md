@@ -1,8 +1,40 @@
 Bilet satın alırken sitede "ses ve videoları engelle"'yi kapatırsanız bilet başarıyla alınırsa recep ivedik gülüyor.
 İyi yolculuklar dileriz...
 ## Kurulum (Development)
+Kurulum (Docker ile - Tavsiye Edilen)
 
-Projenin çalışabilmesi için bir veritabanına ihtiyacı vardır. Veritabanını ve test kullanıcılarını oluşturmak için lütfen aşağıdaki adımları izleyin:
+Bu projeyi çalıştırmanın en kolay yolu Docker kullanmaktır. Bilgisayarınızda Docker ve Docker Compose kurulu olmalıdır.
+
+    Projeyi klonlayın:
+    Bash
+
+git clone https://github.com/arifemrekarabiyik/bilet-satin-alma.git
+cd bilet-satin-alma
+
+Docker konteynerlerini başlatın:
+Bash
+
+docker compose up --build -d
+
+(-d bayrağı, terminalinizi meşgul etmeden arka planda çalıştırır.)
+
+Veritabanını Kurun (En Önemli Adım): Konteyner ilk başladığında veritabanı boştur. Veritabanını, tabloları ve test kullanıcılarını oluşturmak için tarayıcınızdan aşağıdaki adrese gidin:
+
+http://localhost/setup.php
+
+(Not: Eğer docker-compose.yml dosyanızda portu değiştirdiyseniz, 8080 gibi, http://localhost:8080/setup.php adresini kullanın.)
+
+Ekranda "Kurulum başarıyla tamamlandı!" mesajını gördüğünüzde GÜVENLİK İÇİN setup.php dosyasını silin. (Dosyayı yerel klasörünüzden silmeniz yeterlidir).
+
+Kullanıma Hazır! Artık http://localhost/ adresinden siteye erişebilir ve aşağıdaki test kullanıcılarıyla giriş yapabilirsiniz:
+
+    Admin: admin / admin123
+
+    Firma: kamil / kamil
+
+    Yolcu: arif / arif
+
+ XAMPP ile çalıştırma
 
 1.  Projeyi klonlayın veya indirin.
 2.  Dosyaları XAMPP, WAMP veya benzeri bir PHP sunucusunun `htdocs` klasörüne taşıyın.
